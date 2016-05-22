@@ -8,11 +8,7 @@ $window: $white;
 
 body {
   background-color: $background;
-  font-family: 'Noto Sans';
-}
-
-.main-title {
-  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .main-title,
@@ -20,6 +16,25 @@ body {
 .participant-list {
   background-color: $window;
   border-radius: 4px;
+  padding: 4px;
+}
+
+.message-window ul, .participant-list ul{
+  list-style: none;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.message-window {
+  min-height: 80vh;
+}
+
+.message-window li {
+  clear: both;
+  margin-bottom: 15px;
 }
 
 .header {
@@ -27,3 +42,20 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.screen-name, .mod-name {
+  font-weight: 700;
+}
+
+.message, .mod-message {
+  display: inline-block;
+  float: right;
+  width: 70%;
+  clear: both;
+}
+
+.mod-message {
+  text-decoration: underline;
+}
+
+
