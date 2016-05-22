@@ -17,11 +17,15 @@ body {
   margin-bottom: 5vh; }
 
 .message-window {
-  min-height: 80vh; }
+  height: 80vh;
+  overflow: auto;
+  padding-right: 10px; }
 
 .message-window li {
   clear: both;
-  margin-bottom: 15px; }
+  width: 100%;
+  margin-top: 10px;
+  display: inline-block; }
 
 .header {
   border-radius: 10px;
@@ -34,8 +38,9 @@ body {
 .message, .mod-message {
   display: inline-block;
   float: right;
-  width: 70%;
+  width: 75%;
   clear: both; }
 
 .mod-message {
-  text-decoration: underline; }
+  font-weight: 700;
+  color: #444; }
