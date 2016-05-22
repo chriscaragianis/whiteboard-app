@@ -1,0 +1,29 @@
+//Color definitions
+$lightgray: #ccc;
+$white: #fff;
+
+//Color semantics
+$background: $lightgray;
+$window: $white;
+
+body {
+  background-color: $background;
+  font-family: 'Noto Sans';
+}
+
+.main-title {
+  text-align: center;
+}
+
+.main-title,
+.message-window,
+.participant-list {
+  background-color: $window;
+  border-radius: 4px;
+}
+
+.header {
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
