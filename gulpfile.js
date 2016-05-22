@@ -10,7 +10,7 @@ gulp.task('vendor-css', function() {
     .pipe(gulp.dest('./public'));
 });
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('./sass/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./public/styles'));
 });
