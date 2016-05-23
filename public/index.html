@@ -9,7 +9,7 @@
     <link href='styles/vendor.css' rel='stylesheet' type='text/css'>
     <link href='styles/main.css' rel='stylesheet' type='text/css'>
   </head>
-  <body>
+  <body ng-app="whiteboardHostApp">
     <div class="container">
       <div class="header row">
         <h2 class="main-title u-full-width">Whiteboard</h2>
@@ -34,7 +34,7 @@
               <span class="mod-message">Message from moderator</span>
             </li>
             <li>
-              <span class="screen-name">Name2:</span>
+              <span class="screen-name name2">Name2:</span>
               <span class="message">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</span>
             </li>
             <li>
@@ -55,6 +55,8 @@
         </div>
       </div>
     </div>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/whiteboardHost.js"></script>
   </body>
 </html>
 
