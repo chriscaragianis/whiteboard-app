@@ -9,13 +9,13 @@ body {
 
 .main-title,
 .message-window,
-.participant-list {
+.guest-list {
   background-color: $window;
   border-radius: 4px;
   padding: 4px;
 }
 
-.message-window ul, .participant-list ul{
+.message-window ul, .guest-list ul{
   list-style: none;
 }
 
