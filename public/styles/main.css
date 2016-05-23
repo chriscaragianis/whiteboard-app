@@ -41,7 +41,7 @@ body {
   padding-left: 10px;
   padding-right: 10px; }
 
-.screen-name, .mod-name {
+.guest-name, .mod-name {
   font-weight: 700; }
 
 .message, .mod-message {

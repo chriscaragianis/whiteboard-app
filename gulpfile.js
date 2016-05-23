@@ -12,7 +12,7 @@ gulp.task('vendor-js', function() {
 });
 
 gulp.task('whiteboard-host-js', function() {
-  return gulp.src('./public/app/**/*.js')
+  return gulp.src('./whiteboardHostApp/**/*.js')
     .pipe(concat('whiteboardHost.js'))
     .pipe(gulp.dest('./public/scripts'));
 });
