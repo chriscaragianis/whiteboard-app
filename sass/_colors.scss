@@ -8,6 +8,7 @@ $white: #fff;
 $red: #e00;
 $orange: #f90;
 $green: #0f0;
+$blue: #00f;
 
 
 //Color semantics
@@ -15,3 +16,14 @@ $background: $lightgray;
 $window: $white;
 $mod-message-color: $darkgray;
 
+.red {
+  color: $red;
+}
+
+.blue {
+  color: $blue;
+}
+
+.orange {
+  color: $orange;
+}

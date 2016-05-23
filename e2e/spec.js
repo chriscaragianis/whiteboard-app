@@ -13,4 +13,5 @@ describe('Whiteboard host page', function() {
     var guests = element(by.css('.guest-list'));
     expect(guests.getText()).toContain('Bubbles');
   });
+
 });

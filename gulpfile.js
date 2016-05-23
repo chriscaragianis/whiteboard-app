@@ -32,7 +32,7 @@ gulp.task('sass', function () {
 gulp.task('file:watch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
   gulp.watch('./vendor/**/*.css', ['vendor-css']);
-  gulp.watch('./public/app/**/*.js', ['whiteboard-host-js']);
+  gulp.watch('./whiteboardHostApp/**/*.js', ['whiteboard-host-js']);
 });
 
 gulp.task('default', ['sass',

@@ -41,10 +41,11 @@
           </ul>
         </div>
         <div class="guest-list three columns">
-          <ul ng-repeat="guest in guests">
-            <li>
-              <span class="guest-name">{{guest.name}}</span>
+          <ul>
+            <li ng-repeat="guest in guests">
+              <span class="guest-name {{guest.name}} {{guest.color}}">{{guest.name}}</span>
             </li>
+            <li class="mod-name">ModName</li>
           </ul>
         </div>
       </div>

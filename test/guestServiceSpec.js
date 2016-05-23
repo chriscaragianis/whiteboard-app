@@ -1,5 +1,4 @@
 'use strict';
-
 describe('guestService', function() {
 
   var guestService, httpBackend;
@@ -9,11 +8,7 @@ describe('guestService', function() {
     httpBackend = $httpBackend;
     guestService = _guestService_;
 
-    httpBackend.when('GET', '/api/guests').respond([
-                                                     {"name": "Ricky"},
-                                                     {"name": "Julian"},
-                                                     {"name": "Bubbles"}
-                                                   ]);
+    httpBackend.when('GET', '/api/guests').respond(guestData);
   }));
 
   describe('getGuests', function() {

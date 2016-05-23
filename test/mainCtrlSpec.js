@@ -1,6 +1,5 @@
 'use strict';
 
-
 describe('mainCtrl', function() {
 
   var httpBackend, controller, scope;
@@ -13,20 +12,26 @@ describe('mainCtrl', function() {
       $scope: scope
     });
 
-    httpBackend.when('GET', '/api/guests').respond([
-                                                     {"name": "Ricky"},
-                                                     {"name": "Julian"},
-                                                     {"name": "Bubbles"}
-                                                   ]);
+    httpBackend.when('GET', '/api/guests').respond(guestData);
   }));
 
   describe('getGuests', function() {
-    it('provides an array of guests', function() {
-      var guests;
+    var guests;
+    beforeEach(function() {
       httpBackend.flush();
       guests = scope.guests;
+    });
+
+    it('provides an array of guests', function() {
       expect(guests.length).toEqual(3);
+    });
+
+    it('provides the correct names', function() {
       expect(guests[1].name).toEqual('Julian');
+    });
+
+    it('provides the correct colors', function() {
+      expect(guests[1].color).toEqual('orange');
     });
   });
 });
